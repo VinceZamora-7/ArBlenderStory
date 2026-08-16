@@ -1,0 +1,36 @@
+:root {
+    --background: rgb(29, 31, 33);
+    --surface: rgb(48, 52, 54);
+    --surface-hover: rgb(59, 64, 66);
+    --text: rgb(246, 247, 247);
+    --muted: rgb(180, 188, 184);
+    --green: rgb(51, 184, 110);
+}
+.app-root { position: absolute; left: 0; right: 0; top: 0; bottom: 0; color: var(--text); }
+.hidden { display: none; }
+.splash { flex-grow: 1; align-items: center; justify-content: center; background-color: var(--background); }
+.logo { font-size: 68px; -unity-font-style: bold; color: var(--green); letter-spacing: 5px; }
+.subtitle { margin-top: 12px; font-size: 23px; color: var(--text); }
+.route-shell { flex-grow: 1; background-color: var(--background); padding: 44px 42px 120px 42px; }
+.top-bar { height: 104px; justify-content: center; border-bottom-width: 1px; border-bottom-color: rgb(67, 72, 73); }
+.brand { font-size: 35px; -unity-font-style: bold; color: var(--text); letter-spacing: 3px; }
+.kicker { font-size: 13px; color: var(--green); margin-top: 5px; letter-spacing: 1px; }
+.page { flex-grow: 1; }
+.content-page { padding-top: 28px; }
+.page-title { font-size: 34px; -unity-font-style: bold; color: var(--text); }
+.page-copy { font-size: 18px; color: var(--muted); margin-top: 8px; margin-bottom: 22px; white-space: normal; }
+.tutorial-list { flex-grow: 1; }
+.tutorial-card { height: 104px; margin-bottom: 13px; padding: 18px 22px; background-color: var(--surface); border-radius: 14px; align-items: flex-start; justify-content: center; border-width: 1px; border-color: rgb(73, 78, 80); }
+.tutorial-card:hover { background-color: var(--surface-hover); }
+.tutorial-card.featured { background-color: rgb(39, 91, 61); border-color: var(--green); }
+.card-title { font-size: 25px; -unity-font-style: bold; color: var(--text); }
+.card-meta { font-size: 12px; color: rgb(206, 231, 216); margin-top: 7px; letter-spacing: 1px; }
+.bottom-nav { position: absolute; left: 24px; right: 24px; bottom: 20px; height: 76px; flex-direction: row; padding: 8px; background-color: rgb(38, 41, 43); border-radius: 18px; }
+.nav-button { flex-grow: 1; margin-left: 3px; margin-right: 3px; background-color: transparent; color: var(--muted); border-width: 0; font-size: 15px; border-radius: 12px; }
+.nav-button.active { background-color: rgb(40, 100, 66); color: white; }
+.route-message { margin-top: 25px; padding: 24px; background-color: var(--surface); border-radius: 14px; }
+.scan-panel { flex-grow: 1; align-items: center; }
+.scan-preview { width: 100%; max-width: 820px; height: 760px; background-color: rgb(18, 20, 21); border-radius: 18px; border-width: 2px; border-color: rgb(73, 78, 80); -unity-background-scale-mode: scale-and-crop; align-items: center; justify-content: center; overflow: hidden; }
+.scan-frame { width: 62%; height: 62%; border-width: 4px; border-color: var(--green); border-radius: 18px; }
+.scan-status { font-size: 17px; color: var(--text); margin-top: 18px; white-space: normal; -unity-text-align: middle-center; }
+.workspace-home { position: absolute; left: 20px; top: 20px; height: 54px; min-width: 130px; border-radius: 14px; background-color: rgb(39, 91, 61); color: white; font-size: 17px; }

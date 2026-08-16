@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="app-root" class="app-root" picking-mode="Ignore">
+        <ui:VisualElement name="splash" class="splash">
+            <ui:Label text="MODELAR" class="logo" />
+            <ui:Label text="Interactive Blender Learning" class="subtitle" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="route-shell" class="route-shell hidden">
+            <ui:VisualElement class="top-bar">
+                <ui:VisualElement>
+                    <ui:Label text="MODELAR" class="brand" />
+                    <ui:Label name="route-kicker" text="LEARN BLENDER BY DOING" class="kicker" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="home-page" class="page content-page">
+                <ui:Label text="Interactive tutorials" class="page-title" />
+                <ui:Label text="Choose a tool and practice directly on the cube." class="page-copy" />
+                <ui:ScrollView class="tutorial-list">
+                    <ui:Button name="tutorial-bevel" class="tutorial-card featured">
+                        <ui:Label text="Bevel" class="card-title" />
+                        <ui:Label text="EDGE SELECT  •  PRECISION WIDTH" class="card-meta" />
+                    </ui:Button>
+                    <ui:Button name="tutorial-extrude" class="tutorial-card"><ui:Label text="Extrude" class="card-title" /><ui:Label text="FACE TOOL  •  INTERACTIVE PRACTICE" class="card-meta" /></ui:Button>
+                    <ui:Button name="tutorial-inset" class="tutorial-card"><ui:Label text="Inset" class="card-title" /><ui:Label text="FACE TOOL  •  INTERACTIVE PRACTICE" class="card-meta" /></ui:Button>
+                    <ui:Button name="tutorial-knife" class="tutorial-card"><ui:Label text="Knife" class="card-title" /><ui:Label text="CUT TOOL  •  INTERACTIVE PRACTICE" class="card-meta" /></ui:Button>
+                    <ui:Button name="tutorial-loopcut" class="tutorial-card"><ui:Label text="Loop Cut" class="card-title" /><ui:Label text="EDGE LOOP  •  INTERACTIVE PRACTICE" class="card-meta" /></ui:Button>
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="simple-page" class="page content-page hidden">
+                <ui:Label name="simple-title" text="Scan" class="page-title" />
+                <ui:Label name="simple-copy" text="" class="page-copy route-message" />
+                <ui:VisualElement name="scan-panel" class="scan-panel hidden">
+                    <ui:VisualElement name="scan-preview" class="scan-preview">
+                        <ui:VisualElement class="scan-frame" picking-mode="Ignore" />
+                    </ui:VisualElement>
+                    <ui:Label name="scan-status" text="Starting camera…" class="scan-status" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="bottom-nav">
+                <ui:Button name="nav-home" text="Home" class="nav-button active" />
+                <ui:Button name="nav-scan" text="Scan" class="nav-button" />
+                <ui:Button name="nav-story" text="Story" class="nav-button" />
+                <ui:Button name="nav-settings" text="Settings" class="nav-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Button name="workspace-home" text="← Home" class="workspace-home hidden" />
+    </ui:VisualElement>
+</ui:UXML>

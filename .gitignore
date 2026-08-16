@@ -1,0 +1,48 @@
+# Unity-generated directories
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/UIElementsSchema/
+
+# Unity and Android build output
+/[Bb]uild/
+/[Bb]uilds/
+/*.apk
+/*.aab
+/.utmp/
+/*_BurstDebugInformation_DoNotShip/
+/*_BackUpThisFolder_ButDontShipItWithYourGame/
+
+# IDE and operating-system files
+/.idea/
+/.vscode/
+/.vs/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.DS_Store
+Thumbs.db
+
+# Local Unity crash and diagnostic files
+sysinfo.txt
+crashlytics-build.properties
+
+# Large authoring/reference files are kept locally. The small runtime GLB files
+# remain tracked under Assets/Models/LearningObject.
+/Assets/Models/LearningObject/*Source.blend
+/Assets/Models/LearningObject/*Source.blend.meta
+/Assets/Models/LearningObject/*Demo.mp4
+/Assets/Models/LearningObject/*Demo.mp4.meta
